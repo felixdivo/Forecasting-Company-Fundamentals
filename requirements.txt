@@ -1,0 +1,29 @@
+ruff
+
+# numpy
+# scipy
+pyro-ppl
+
+pandas[performance,hdf5]
+tabulate
+sortedcontainers
+
+seaborn
+matplotlib
+
+wandb>=0.19.2
+lightning
+torchmetrics
+rich
+einops
+
+ipykernel
+jupyter
+ipywidgets
+
+python-dotenv
+pyrootutils
+
+prophet>=1.0.0
+darts~=0.32.0  # See https://github.com/unit8co/darts/blob/master/INSTALL.md
+chronos-forecasting

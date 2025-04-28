@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forecasting-company-fundamentals"
+authors = [
+  { name="Felix Divo", email="felix.divo@cs.tu-darmstadt.de" },
+]
+urls = { Homepage = "https://github.com/felixdivo/forecasting-company-fundamentals" }
+description = "Official repository for the paper 'Forecasting Company Fundamentals'."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["notebooks"]
+
+[tool.setuptools.dynamic]
+version = { attr = "forecasting_cfs.__version__" }

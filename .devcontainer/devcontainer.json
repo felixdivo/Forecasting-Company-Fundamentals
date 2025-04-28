@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "ACATIS Mono",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+  },
+  "remoteUser": "root", // More info: https://aka.ms/dev-containers-non-root
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "tamasfe.even-better-toml",
+        "github.copilot",
+        "genieai.chatgpt-vscode",
+        "charliermarsh.ruff"
+      ]
+    }
+  },
+  "runArgs": [
+    "--gpus",
+    "\"device=00\"",
+  ]
+}
