@@ -1,6 +1,6 @@
 # Forecasting Company Fundamentals
 
-Official implementation of the paper *Forecasting Company Fundamentals* submitted to TMLR.
+Official implementation of the paper [*Forecasting Company Fundamentals* published in TMLR](https://openreview.net/pdf?id=haf78jerSt).
 
 ## Installation
 
